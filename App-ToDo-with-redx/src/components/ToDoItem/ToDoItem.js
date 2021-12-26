@@ -1,6 +1,7 @@
 import * as actions from "../actions";
 import {connect} from 'react-redux'
 import { bindActionCreators } from "redux";
+import '../ToDoItem/ToDoItem.css'
 
 const ToDoItem = ({ item, markDone, remTodo, markImp }) => {
     return (

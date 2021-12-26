@@ -1,0 +1,15 @@
+li {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    border: 1px solid rgb(61, 60, 60);
+    padding: 10px;
+    color: #d5d6d6;
+    background-color: #2C3137;
+    margin: 5px;
+}
+li:hover{
+  background-color: #6841DA;
+  color: white;
+  border-radius: 5px;
+}

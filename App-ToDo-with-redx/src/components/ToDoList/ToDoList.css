@@ -1,0 +1,12 @@
+.listOfTodos {
+    margin: 0 auto;
+    width: 100%;
+}
+.done{
+    background-color: rgb(187, 179, 179);
+    color: gray;
+    text-decoration: line-through;
+}
+.important {
+    font-weight: bold;
+}

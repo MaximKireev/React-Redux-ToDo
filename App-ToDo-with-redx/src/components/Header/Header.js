@@ -1,15 +1,21 @@
 import store from "../store";
 import { filterAll, filterDone, filterImportant } from "../actions";
+import '../Header/Header.css'
 
 const Header = () => {
     return (
-        <div className="header-wrapper" style={{ padding: "0 30px 30px 30px" }}>
-            <h3>Filter ToDos: </h3>
-            <button onClick={() => store.dispatch(filterAll())}>All</button>
-            <button onClick={() => store.dispatch(filterDone())}>Done</button>
-            <button onClick={() => store.dispatch(filterImportant())}>
+        <div className="header-wrapper">
+            <a
+            className="sortAll"
+             onClick={() => store.dispatch(filterAll())}>All</a>
+            <a
+            className="sortDone"
+             onClick={() => store.dispatch(filterDone())}>Done</a>
+            <a
+            className="sortImportant"
+             onClick={() => store.dispatch(filterImportant())}>
                 Important
-            </button>
+            </a>
         </div>
     );
 };
