@@ -13,7 +13,8 @@ border-bottom: 3px solid #353A40 ;
 }
 
 a:hover {
-background-color: #44484d;
+    background: rgb(53,58,64);
+    background: linear-gradient(180deg, rgba(53,58,64,1) 0%, rgba(68,72,77,1) 100%);
 border-bottom: 3px solid #6841DA ;
 cursor: pointer;
 }

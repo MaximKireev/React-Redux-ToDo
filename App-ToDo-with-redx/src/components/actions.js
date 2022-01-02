@@ -1,4 +1,5 @@
-const addTodo = (value) => {
+const addTodo = value => {
+ 
     let payload = { id: Date.now(), title: value, important: false, done: false };
     return {
       type: "ADD TODO",
@@ -39,6 +40,11 @@ const addTodo = (value) => {
       type: "FILTER IMPORTANT"
     };
   };
+  const setFormVisible = () => {
+    return {
+      type: "SET FORM VISIBLE"
+    };
+  };
   
   export {
     addTodo,
@@ -47,6 +53,7 @@ const addTodo = (value) => {
     markDone,
     filterAll,
     filterDone,
-    filterImportant
+    filterImportant,
+    setFormVisible
   };
   

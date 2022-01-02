@@ -1,0 +1,21 @@
+
+
+.formAdd{
+    width: 30%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    z-index: 9999;
+}
+
+.inputItemAdder{
+    width: 80%;
+    border-radius: 5px;
+    z-index: 9999;
+
+}
+.btn-add{
+    width: 20%;
+    border-radius: 5px;
+    z-index: 9999;
+}

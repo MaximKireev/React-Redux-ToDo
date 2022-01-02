@@ -12,12 +12,15 @@ let initialState = {
     getCountTodos: () => {
       return this.todos.length;
     },
-    filterType: 'All'
+    filterType: 'All',
+    setVisible: false
   };
   
   const reducer = (state = initialState, action) => {
+    
     switch (action.type) {
       case "ADD TODO":
+       if( action.payload.title === '') {return state}
         return { ...state, todos: [...state.todos, action.payload] };
   
       case "REMOWE TODO":
@@ -57,6 +60,11 @@ let initialState = {
             ...state,
             filterType: 'Important'
           };
+          case "SET FORM VISIBLE":
+            return {
+              ...state,
+              setVisible: !state.setVisible
+            };
       default:
         return state;
     }
