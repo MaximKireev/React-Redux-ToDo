@@ -1,10 +1,14 @@
 import * as actions from "../actions";
 import {connect} from 'react-redux'
 import { bindActionCreators } from "redux";
+import { Button } from "@mui/material";
+import { ButtonGroup } from "@mui/material";
 import '../ToDoItem/ToDoItem.css'
+
 
 const ToDoItem = ({ item, markDone, remTodo, markImp }) => {
     return (
+        < div className = 'li-wrapper'>
         <li
             className={
                 item.done
@@ -16,18 +20,19 @@ const ToDoItem = ({ item, markDone, remTodo, markImp }) => {
             key={item.id}
         >
             {item.title}
-            <div className="control-btns">
-                <button className="btn-done" onClick={() => markDone(item.id)}>
-                    {item.done ? "Undo" : "Done"}
-                </button>
-                <button className="btn-del" onClick={() => remTodo(item.id)}>
-                    Del
-                </button>
-                <button className="btn-important" onClick={() => markImp(item.id)}>
-                    !!!
-                </button>
-            </div>
+          
+           
         </li>
+           <ButtonGroup size="small" aria-label="small button group" className="control-btns">
+           <Button variant="outlined"
+           onClick={() => markDone(item.id)}>{item.done ? "Undo" : "Done"}</Button>
+           <Button variant="outlined"
+           onClick={() => remTodo(item.id)}>Del</Button>
+           <Button variant="outlined"
+           onClick={() => markImp(item.id)}>!!!</Button>
+           </ButtonGroup>
+     
+     </div> 
     );
 };
 const mapStateToProps = (state) => {

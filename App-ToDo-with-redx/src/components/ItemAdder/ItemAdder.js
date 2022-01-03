@@ -61,12 +61,8 @@ const mapStateToProps = (state) => {
   }
 }
 
-const mapDispatchToProps = (dispatch) => {
-
-  return {
-    setFormVisible: () => dispatch(setFormVisible()),
-    addTodo: (value) => dispatch(addTodo(value) )
-  }
+const mapDispatchToProps =  {
+  setFormVisible, addTodo
 }
 
 export default connect(mapStateToProps, mapDispatchToProps)(ItemAdder);

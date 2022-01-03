@@ -1,4 +1,4 @@
-li {
+.li-wrapper {
     display: flex;
     justify-content: space-between;
     width: 90%;
@@ -9,7 +9,7 @@ li {
     margin: 5px;
 }
 li:hover{
-  background-color: #6841DA;
+  border: 1px solid #6841DA;
   color: white;
   border-radius: 5px;
 }
