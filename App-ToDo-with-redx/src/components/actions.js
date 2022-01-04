@@ -45,6 +45,11 @@ const addTodo = value => {
       type: "SET FORM VISIBLE"
     };
   };
+  const setThemeColor = () => {
+    return {
+      type: "CHANGE COLOR THEME"
+    };
+  };
   
   export {
     addTodo,
@@ -54,6 +59,7 @@ const addTodo = value => {
     filterAll,
     filterDone,
     filterImportant,
-    setFormVisible
+    setFormVisible,
+    setThemeColor
   };
   

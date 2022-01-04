@@ -23,7 +23,7 @@
     border: none;
     outline: none;
     background-color: #353A40;
-    color: white;
+    color: inherit;
     font-size: 19px;
     animation: wrapperToLeft 450ms;
     animation-fill-mode: forwards;
@@ -35,7 +35,6 @@
     z-index: 9999;
 }
 .btnAddNewItem {
-    background-color: #6841DA;
     min-width: 90px;
     height: 50px;
     margin: 5px;

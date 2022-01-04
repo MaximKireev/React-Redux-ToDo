@@ -8,7 +8,7 @@ import '../ToDoItem/ToDoItem.css'
 
 const ToDoItem = ({ item, markDone, remTodo, markImp }) => {
     return (
-        < div className = 'li-wrapper'>
+        < div className = 'li-wrapper' style={item.important? {border: "1px solid red"}: null}>
         <li
             className={
                 item.done

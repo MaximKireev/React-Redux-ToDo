@@ -13,7 +13,8 @@ let initialState = {
       return this.todos.length;
     },
     filterType: 'All',
-    setVisible: false
+    setVisible: false,
+    isThemeDefault: true
   };
   
   const reducer = (state = initialState, action) => {
@@ -55,16 +56,21 @@ let initialState = {
           filterType: 'Done'
         };
 
-        case "FILTER IMPORTANT":
-          return {
+      case "FILTER IMPORTANT":
+        return {
             ...state,
             filterType: 'Important'
           };
-          case "SET FORM VISIBLE":
-            return {
+      case "SET FORM VISIBLE":
+        return {
               ...state,
               setVisible: !state.setVisible
             };
+      case "CHANGE COLOR THEME":
+        return {
+                ...state,
+                isThemeDefault: !state.isThemeDefault
+              };
       default:
         return state;
     }

@@ -2,14 +2,15 @@
     display: flex;
     justify-content: space-between;
     width: 90%;
-    border: 1px solid rgb(61, 60, 60);
+    max-width: 90%;
+    border: 1px solid rgb(77, 76, 76);
     padding: 10px;
-    color: #d5d6d6;
-    background-color: #2C3137;
+    color: rgb(77, 76, 76);;
     margin: 5px;
+    box-sizing: border-box;
+    border-radius: 5px
 }
-li:hover{
+
+.li-wrapper:hover{
   border: 1px solid #6841DA;
-  color: white;
-  border-radius: 5px;
 }

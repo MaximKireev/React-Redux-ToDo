@@ -1,0 +1,14 @@
+* {
+    list-style: none;
+    box-sizing: border-box;
+    text-decoration: none;
+   
+}
+
+body {
+    background-color: #DCE0E8;
+    }
+    button {
+        background-color: #6841DA;
+        color: white;
+    }

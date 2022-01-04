@@ -1,10 +1,4 @@
-* {
-    list-style: none;
-    box-sizing: border-box;
-    text-decoration: none;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color: #EFF2F6
-}
+
 .app{
     width: 30%;
     margin: 0 auto;
@@ -12,10 +6,4 @@
     margin-top: 8%;
     background-color: #353A40;
     border-radius: 20px;
-}
-body {
-
-background-color: #E54980;
-/*background: rgb(251,100,174);
-background: linear-gradient(70deg, rgba(251,100,174,1) 0%, rgba(155,77,249,1) 50%, rgba(114,144,250,1) 100%);*/
 }
