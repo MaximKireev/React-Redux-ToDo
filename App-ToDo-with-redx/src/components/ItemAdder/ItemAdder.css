@@ -1,0 +1,60 @@
+
+.addNewItem-wrapper{
+    position: relative;
+    display: inline-block;
+    border-radius: 35px;
+    margin: 0 auto 30px auto;
+    margin-left: 40%;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.animate-wrapper {
+    animation: wrapperRight 250ms;
+    animation-fill-mode: forwards;
+}
+.inputItemAdder {
+    margin-left: 30px;
+    display: none;}
+.inputItemAdder:focus {outline: none;}
+
+.left {
+    display: inline;
+    border: none;
+    outline: none;
+    background-color: #353A40;
+    color: inherit;
+    font-size: 19px;
+    animation: wrapperToLeft 450ms;
+    animation-fill-mode: forwards;
+}
+.formAdd{
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    z-index: 9999;
+}
+.btnAddNewItem {
+    min-width: 90px;
+    height: 50px;
+    margin: 5px;
+    border-radius: 25px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+
+   
+@keyframes wrapperRight {
+    0% {
+        margin-left: 40%;
+
+    }
+     100% {
+        margin-left: 0
+    }}
+@keyframes wrapperToLeft {
+   0%  {width: 0}
+   100%  {width: 400px}
+   }
+   

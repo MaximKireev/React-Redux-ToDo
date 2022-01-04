@@ -1,0 +1,11 @@
+.listOfTodos {
+    margin: 0 auto;
+    width: 100%;
+}
+.done{
+    color: gray;
+    text-decoration: line-through;
+}
+.important {
+    font-weight: bold;
+}
