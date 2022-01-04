@@ -5,7 +5,7 @@ import { useEffect, useState } from 'react';
 import {connect} from 'react-redux'
 import {setFormVisible, addTodo } from '../actions'
 
-const ItemAdder = ({visible, setFormVisible, addTodo}) => {
+const ItemAdder = ({visible, setFormVisible, addTodo, currentTheme}) => {
   let [value, setValue] = useState("");
 
   const onInputChange = (event) => {
@@ -39,6 +39,7 @@ return (
   <div className = 'addNewItem-wrapper'>
      <form className="formAdd" onSubmit={onSubmit}>
     <input
+               
                 className="inputItemAdder"
                 type="text"
                 value={value}
@@ -57,7 +58,8 @@ return (
 
 const mapStateToProps = (state) => {
   return {
-      visible: state.setVisible
+      visible: state.setVisible,
+      currentTheme: state.isThemeDefault
   }
 }
 

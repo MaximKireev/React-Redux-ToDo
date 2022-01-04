@@ -12,3 +12,11 @@ body {
         background-color: #6841DA;
         color: white;
     }
+
+    input {
+        background-color: inherit;
+    }
+    a {
+        text-align: center;
+border-bottom: 3px solid #353A40 ;
+    }
