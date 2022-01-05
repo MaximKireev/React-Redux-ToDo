@@ -1,6 +1,11 @@
 .listOfTodos {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
     margin: 0 auto;
     width: 100%;
+    box-sizing: border-box;
+    padding-left: 0;
 }
 .done{
     color: gray;
@@ -8,4 +13,9 @@
 }
 .important {
     font-weight: bold;
+}
+@media screen and (min-width: 375px) and (max-width: 768px) {
+    .listOfTodos {
+        padding-left: 0;
+    }
 }
