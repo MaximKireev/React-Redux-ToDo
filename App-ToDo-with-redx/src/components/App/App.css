@@ -7,3 +7,18 @@
     background-color: #353A40;
     border-radius: 20px;
 }
+@media screen and (min-width: 375px) and (max-width: 768px) {
+    .app{
+        width: 100%;
+
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1440px) {
+    .app{
+        width: 70%;
+
+    }
+    
+}
+

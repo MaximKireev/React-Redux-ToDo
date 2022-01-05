@@ -1,6 +1,7 @@
 .li-wrapper {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     width: 90%;
     max-width: 90%;
     border: 1px solid rgb(77, 76, 76);
@@ -13,4 +14,13 @@
 
 .li-wrapper:hover{
   border: 1px solid #6841DA;
+}
+.todo-item {
+  overflow: hidden;
+  overflow-wrap: break-word;
+  padding: 5px;
+
+}
+.control-btns {
+max-height: 40px;
 }
