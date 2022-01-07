@@ -2,11 +2,6 @@
 
 # dependencies
 /node_modules
-/foor-delivery-shop
-/online-book-shop
-/stardb
-/todo
-/counter-redux
 /.pnp
 .pnp.js
 
